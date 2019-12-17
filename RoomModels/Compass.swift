@@ -19,6 +19,9 @@ class Compass {
       Direction.down : DirectionToDestination(directionInfo: DirectionInfo(direction: .down), destinationId: nil),
       Direction.teleport : DirectionToDestination(directionInfo: DirectionInfo(direction: .teleport), destinationId: nil) ]
   
+  init(){
+  }
+  
   func updateDestinationId(for direction: Direction, newDestinationId: Int?) {
     
     if let dir = compassFull[direction]{ // Should exist but double check
@@ -46,6 +49,14 @@ class Compass {
       else {
         print("\(dir.value.directionInfo.direction) : \(dir.value.directionInfo.directionName) : nil")
       }
+    }
+  }
+  
+  func getIdforDirection(direction: Direction) -> Int? {
+    if let dir = compassFull[direction]{ // Should exist but double check
+      return dir.destinationId
+    } else {
+      return nil
     }
   }
   

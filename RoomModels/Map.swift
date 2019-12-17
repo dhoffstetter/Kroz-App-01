@@ -31,4 +31,22 @@ class Map {
     map[4] = room_004
   }
   
+  func getCompassForCurrentId(roomId: Int) -> Compass? {
+    
+    if let room = self.map[roomId] {
+      return room.getCompass()
+    } else {
+      return nil
+    }
+  }
+  
+  func getRoomIdForCurrentId(roomId: Int, direction: Direction) -> Int?{
+    
+    if let room = self.map[roomId] {
+      return room.getIdforDirection(direction: direction)
+    } else {
+      return nil
+    }
+  }
+  
 }

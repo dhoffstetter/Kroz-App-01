@@ -35,4 +35,13 @@ class Location {
   func diplayAllDestinationIdsInCompass(){
     compass.displayAllDestinationIds()
   }
+  
+  func getCompass() -> Compass {
+    return compass
+  }
+  
+  func getIdforDirection(direction: Direction) -> Int? {
+    return compass.getIdforDirection(direction: direction)
+    
+  }
 }
