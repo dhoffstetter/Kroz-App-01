@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4132D1B23A9148600E94B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D1A23A9148600E94B64 /* AppDelegate.swift */; };
+		C4132D1D23A9148600E94B64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D1C23A9148600E94B64 /* SceneDelegate.swift */; };
+		C4132D2023A9148600E94B64 /* Kroz_App_01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4132D1E23A9148600E94B64 /* Kroz_App_01.xcdatamodeld */; };
+		C4132D2223A9148600E94B64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D2123A9148600E94B64 /* ContentView.swift */; };
+		C4132D2423A9148A00E94B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2323A9148A00E94B64 /* Assets.xcassets */; };
+		C4132D2723A9148A00E94B64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */; };
+		C4132D2A23A9148A00E94B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2823A9148A00E94B64 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4132D1723A9148600E94B64 /* Kroz-App-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kroz-App-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4132D1A23A9148600E94B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4132D1C23A9148600E94B64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4132D1F23A9148600E94B64 /* Kroz_App_01.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kroz_App_01.xcdatamodel; sourceTree = "<group>"; };
+		C4132D2123A9148600E94B64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4132D2323A9148A00E94B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4132D2923A9148A00E94B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4132D2B23A9148A00E94B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4132D1423A9148600E94B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4132D0E23A9148600E94B64 = {
+			isa = PBXGroup;
+			children = (
+				C4132D1923A9148600E94B64 /* Kroz-App-01 */,
+				C4132D1823A9148600E94B64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4132D1823A9148600E94B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4132D1723A9148600E94B64 /* Kroz-App-01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4132D1923A9148600E94B64 /* Kroz-App-01 */ = {
+			isa = PBXGroup;
+			children = (
+				C4132D1A23A9148600E94B64 /* AppDelegate.swift */,
+				C4132D1C23A9148600E94B64 /* SceneDelegate.swift */,
+				C4132D2123A9148600E94B64 /* ContentView.swift */,
+				C4132D2323A9148A00E94B64 /* Assets.xcassets */,
+				C4132D2823A9148A00E94B64 /* LaunchScreen.storyboard */,
+				C4132D2B23A9148A00E94B64 /* Info.plist */,
+				C4132D1E23A9148600E94B64 /* Kroz_App_01.xcdatamodeld */,
+				C4132D2523A9148A00E94B64 /* Preview Content */,
+			);
+			path = "Kroz-App-01";
+			sourceTree = "<group>";
+		};
+		C4132D2523A9148A00E94B64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4132D1623A9148600E94B64 /* Kroz-App-01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4132D2E23A9148A00E94B64 /* Build configuration list for PBXNativeTarget "Kroz-App-01" */;
+			buildPhases = (
+				C4132D1323A9148600E94B64 /* Sources */,
+				C4132D1423A9148600E94B64 /* Frameworks */,
+				C4132D1523A9148600E94B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kroz-App-01";
+			productName = "Kroz-App-01";
+			productReference = C4132D1723A9148600E94B64 /* Kroz-App-01.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4132D0F23A9148600E94B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dumb Blonde Software";
+				TargetAttributes = {
+					C4132D1623A9148600E94B64 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C4132D1223A9148600E94B64 /* Build configuration list for PBXProject "Kroz-App-01" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4132D0E23A9148600E94B64;
+			productRefGroup = C4132D1823A9148600E94B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4132D1623A9148600E94B64 /* Kroz-App-01 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4132D1523A9148600E94B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4132D2A23A9148A00E94B64 /* LaunchScreen.storyboard in Resources */,
+				C4132D2723A9148A00E94B64 /* Preview Assets.xcassets in Resources */,
+				C4132D2423A9148A00E94B64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4132D1323A9148600E94B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4132D2023A9148600E94B64 /* Kroz_App_01.xcdatamodeld in Sources */,
+				C4132D1B23A9148600E94B64 /* AppDelegate.swift in Sources */,
+				C4132D2223A9148600E94B64 /* ContentView.swift in Sources */,
+				C4132D1D23A9148600E94B64 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4132D2823A9148A00E94B64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4132D2923A9148A00E94B64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4132D2C23A9148A00E94B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4132D2D23A9148A00E94B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4132D2F23A9148A00E94B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kroz-App-01/Preview Content\"";
+				DEVELOPMENT_TEAM = K8633K44E8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kroz-App-01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.diane.Kroz-App-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4132D3023A9148A00E94B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kroz-App-01/Preview Content\"";
+				DEVELOPMENT_TEAM = K8633K44E8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kroz-App-01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.diane.Kroz-App-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4132D1223A9148600E94B64 /* Build configuration list for PBXProject "Kroz-App-01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4132D2C23A9148A00E94B64 /* Debug */,
+				C4132D2D23A9148A00E94B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4132D2E23A9148A00E94B64 /* Build configuration list for PBXNativeTarget "Kroz-App-01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4132D2F23A9148A00E94B64 /* Debug */,
+				C4132D3023A9148A00E94B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4132D1E23A9148600E94B64 /* Kroz_App_01.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4132D1F23A9148600E94B64 /* Kroz_App_01.xcdatamodel */,
+			);
+			currentVersion = C4132D1F23A9148600E94B64 /* Kroz_App_01.xcdatamodel */;
+			path = Kroz_App_01.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4132D0F23A9148600E94B64 /* Project object */;
+}
