@@ -14,6 +14,13 @@
 		C4132D2423A9148A00E94B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2323A9148A00E94B64 /* Assets.xcassets */; };
 		C4132D2723A9148A00E94B64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */; };
 		C4132D2A23A9148A00E94B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4132D2823A9148A00E94B64 /* LaunchScreen.storyboard */; };
+		C4132D3223A94E1700E94B64 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3123A94E1700E94B64 /* Location.swift */; };
+		C4132D3523A94EBE00E94B64 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3423A94EBE00E94B64 /* StringExt.swift */; };
+		C4132D3723A94EE400E94B64 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3623A94EE400E94B64 /* Direction.swift */; };
+		C4132D3923A94F1A00E94B64 /* DirectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3823A94F1A00E94B64 /* DirectionInfo.swift */; };
+		C4132D3B23A94FA500E94B64 /* DirectionToDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3A23A94FA500E94B64 /* DirectionToDestination.swift */; };
+		C4132D3D23A9502B00E94B64 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3C23A9502B00E94B64 /* Compass.swift */; };
+		C4132D3F23A9548400E94B64 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132D3E23A9548400E94B64 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4132D2923A9148A00E94B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4132D2B23A9148A00E94B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4132D3123A94E1700E94B64 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C4132D3423A94EBE00E94B64 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		C4132D3623A94EE400E94B64 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		C4132D3823A94F1A00E94B64 /* DirectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionInfo.swift; sourceTree = "<group>"; };
+		C4132D3A23A94FA500E94B64 /* DirectionToDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionToDestination.swift; sourceTree = "<group>"; };
+		C4132D3C23A9502B00E94B64 /* Compass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compass.swift; sourceTree = "<group>"; };
+		C4132D3E23A9548400E94B64 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,7 @@
 		C4132D0E23A9148600E94B64 = {
 			isa = PBXGroup;
 			children = (
+				C4132D3323A94E2500E94B64 /* RoomModels */,
 				C4132D1923A9148600E94B64 /* Kroz-App-01 */,
 				C4132D1823A9148600E94B64 /* Products */,
 			);
@@ -76,6 +91,20 @@
 				C4132D2623A9148A00E94B64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4132D3323A94E2500E94B64 /* RoomModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4132D3423A94EBE00E94B64 /* StringExt.swift */,
+				C4132D3623A94EE400E94B64 /* Direction.swift */,
+				C4132D3823A94F1A00E94B64 /* DirectionInfo.swift */,
+				C4132D3A23A94FA500E94B64 /* DirectionToDestination.swift */,
+				C4132D3C23A9502B00E94B64 /* Compass.swift */,
+				C4132D3123A94E1700E94B64 /* Location.swift */,
+				C4132D3E23A9548400E94B64 /* Map.swift */,
+			);
+			path = RoomModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +178,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4132D3D23A9502B00E94B64 /* Compass.swift in Sources */,
+				C4132D3723A94EE400E94B64 /* Direction.swift in Sources */,
+				C4132D3B23A94FA500E94B64 /* DirectionToDestination.swift in Sources */,
 				C4132D2023A9148600E94B64 /* Kroz_App_01.xcdatamodeld in Sources */,
 				C4132D1B23A9148600E94B64 /* AppDelegate.swift in Sources */,
+				C4132D3923A94F1A00E94B64 /* DirectionInfo.swift in Sources */,
+				C4132D3223A94E1700E94B64 /* Location.swift in Sources */,
+				C4132D3F23A9548400E94B64 /* Map.swift in Sources */,
 				C4132D2223A9148600E94B64 /* ContentView.swift in Sources */,
+				C4132D3523A94EBE00E94B64 /* StringExt.swift in Sources */,
 				C4132D1D23A9148600E94B64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
