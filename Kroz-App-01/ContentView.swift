@@ -19,49 +19,84 @@ struct ContentView: View {
   struct ButtonStyle : ViewModifier {
     func body(content: Content) -> some View {
       return content
-        .foregroundColor(Color.green)
+        .foregroundColor(Color.white)
         .font(Font.custom("Arial Rounded MT Bold", size: 20))
     }
   }
     
   var body: some View {
-    VStack{
-      Text("Current Id:\(roomId)")
-      Button(action: {
-        print("Up Button Pressed.")
-        //self.roomId += 1
-      }) {
-        Text("Up").foregroundColor(Color.red).modifier(ButtonStyle())
-      }.padding(.all, buttonPadding)
-      Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-        Text("North").modifier(ButtonStyle())
-      }.padding(.all, buttonPadding)
-      HStack{
+    ZStack{
+      Color.black
+        .edgesIgnoringSafeArea(.all)
+      VStack{
+        Text("Current Id:\(roomId)").foregroundColor(Color.white)
+        
+        // Up Button
         Button(action: {
-          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.west){
+          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.up){
             self.roomId = id
           }
         }) {
-          Text("West").modifier(ButtonStyle())
-        }.padding(.all, buttonPadding)
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-          Text("Teleport").modifier(ButtonStyle())
-        }.padding(.all, buttonPadding)
+          Text("Up").modifier(ButtonStyle())
+        }.padding(.all, buttonPadding).background(Image("Button"))
+        
+        //North Button
         Button(action: {
-          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.east){
+          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.north){
             self.roomId = id
           }
         }) {
-          Text("East").modifier(ButtonStyle())
-        }.padding(.all, buttonPadding)
+          Text("North").modifier(ButtonStyle())
+        }.padding(.all, buttonPadding).background(Image("Button"))
+        
+        HStack{
+          
+          // West Button
+          Button(action: {
+            if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.west){
+              self.roomId = id
+            }
+          }) {
+            Text("West").modifier(ButtonStyle())
+          }.padding(.all, buttonPadding).background(Image("Button"))
+          
+          // Teleport Button
+          Button(action: {
+            if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.teleport){
+              self.roomId = id
+            }
+          }) {
+            Text("Teleport").modifier(ButtonStyle())
+          }.padding(.all, buttonPadding).background(Image("Button"))
+          
+          // East Button
+          Button(action: {
+            if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.east){
+              self.roomId = id
+            }
+          }) {
+            Text("East").modifier(ButtonStyle())
+          }.padding(.all, buttonPadding).background(Image("Button"))
+        }
+        
+        // South Button
+        Button(action: {
+          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.south){
+            self.roomId = id
+          }
+        }) {
+          Text("South").modifier(ButtonStyle())
+        }.padding(.all, buttonPadding).background(Image("Button"))
+        
+        // Down Button
+        Button(action: {
+          if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.down){
+            self.roomId = id
+          }
+        }) {
+          Text("Down").modifier(ButtonStyle())
+        }.padding(.all, buttonPadding).background(Image("Button"))
       }
-      Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-        Text("South").modifier(ButtonStyle())
-      }.padding(.all, buttonPadding)
-      Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-        Text("Down").modifier(ButtonStyle())
-      }.padding(.all, buttonPadding)
-
     }
   }
   
