@@ -11,7 +11,8 @@ import Foundation
 class Map {
   
   var map: [Int: Location] = [:]
-  static var currentId = 11
+//  static var currentId = 11
+  var currentRoomId: Int = 11
   
   init(){
     
@@ -88,6 +89,8 @@ class Map {
     map[42] = room_42
     map[43] = room_43
     map[44] = room_44
+        
+    map[currentRoomId]?.wasVisited = true
   }
   
   func getCompassForCurrentId(roomId: Int) -> Compass? {
@@ -106,6 +109,17 @@ class Map {
     } else {
       return nil
     }
+  }
+  
+  func numberOfRoomsVisited() -> Int {
+    
+    var count = 0
+    for room in map {
+      if room.value.wasVisited == true {
+        count += 1
+      }
+    }
+    return count
   }
   
 }

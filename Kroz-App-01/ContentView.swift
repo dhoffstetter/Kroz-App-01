@@ -11,7 +11,8 @@ import SwiftUI
 struct ContentView: View {
   
   var krozMap = Map()
-  @State var roomId = Map.currentId
+  @State var roomId = 11
+  @State var numberOfRoomsVisited = 1
   
   let buttonPadding: CGFloat = 5
   let midnightBlue = Color(red: 0.0 / 255.0, green: 51.0 / 255.0 , blue: 102.0 / 255.0)
@@ -30,11 +31,11 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
       VStack{
         Text("Current Id:\(roomId)").foregroundColor(Color.white)
-        
+        Text("Number Of Rooms Visited:\(numberOfRoomsVisited)").foregroundColor(Color.white)
         // Up Button
         Button(action: {
           if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.up){
-            self.roomId = id
+            self.processButton(id: id)
           }
         }) {
           Text("Up").modifier(ButtonStyle())
@@ -43,7 +44,7 @@ struct ContentView: View {
         //North Button
         Button(action: {
           if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.north){
-            self.roomId = id
+            self.processButton(id: id)
           }
         }) {
           Text("North").modifier(ButtonStyle())
@@ -54,7 +55,7 @@ struct ContentView: View {
           // West Button
           Button(action: {
             if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.west){
-              self.roomId = id
+              self.processButton(id: id)
             }
           }) {
             Text("West").modifier(ButtonStyle())
@@ -63,7 +64,7 @@ struct ContentView: View {
           // Teleport Button
           Button(action: {
             if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.teleport){
-              self.roomId = id
+              self.processButton(id: id)
             }
           }) {
             Text("Teleport").modifier(ButtonStyle())
@@ -72,7 +73,7 @@ struct ContentView: View {
           // East Button
           Button(action: {
             if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.east){
-              self.roomId = id
+              self.processButton(id: id)
             }
           }) {
             Text("East").modifier(ButtonStyle())
@@ -82,7 +83,7 @@ struct ContentView: View {
         // South Button
         Button(action: {
           if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.south){
-            self.roomId = id
+            self.processButton(id: id)
           }
         }) {
           Text("South").modifier(ButtonStyle())
@@ -91,7 +92,7 @@ struct ContentView: View {
         // Down Button
         Button(action: {
           if let id = self.getDestinationIdforRoomIdAndDestination(roomId: self.roomId, direction: Direction.down){
-            self.roomId = id
+            self.processButton(id: id)
           }
         }) {
           Text("Down").modifier(ButtonStyle())
@@ -102,6 +103,17 @@ struct ContentView: View {
   
   func getDestinationIdforRoomIdAndDestination(roomId: Int, direction: Direction) -> Int? {
     return self.krozMap.getRoomIdForCurrentId(roomId: roomId, direction: direction)
+  }
+  
+  func setCurrentRoomIdAsVisited(roomId: Int) {
+    self.krozMap.map[roomId]?.wasVisited = true
+  }
+  
+  func processButton(id: Int) {
+    self.roomId = id
+    self.setCurrentRoomIdAsVisited(roomId: id)
+    self.krozMap.currentRoomId = id
+    self.numberOfRoomsVisited = self.krozMap.numberOfRoomsVisited()
   }
   
 }
